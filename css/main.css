@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 
-
+/* html, body {
+    width: 100%;
+    height: auto;
+} */
 /*body {
 
 background: url(../img/1_start_1300.png) no-repeat center top;
@@ -16,8 +19,9 @@ a:hover {
     color: #f14a58;
 }
 .main-page-container {
-
-margin: 0 auto;
+/* margin: 0 auto; */
+border-bottom: 1px solid #e5e5e5;
+overflow: hidden;
 }
 
 /*slider part*/
@@ -28,9 +32,9 @@ margin: 0 auto;
     margin: 0 auto;
 }*/
 .slideshow-container{
-    max-width: 1300px;
+    width: 100%;
     position: relative;
-    margin: auto;
+    margin: 0 auto;
 }
 .prev, .next{
     cursor: pointer;
@@ -102,7 +106,6 @@ margin: 0 auto;
 
 .banners {
     margin: 0 auto;
-    max-width: 1180px;
     width: 100%;
     display: flex;
     justify-content: center;

@@ -11,133 +11,136 @@
     <script src="https://use.fontawesome.com/75da3d6281.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <div class="top-header-container">
-                <h2 class="logo">Template</h2>
-                <h2 href="#" class="logo-mobile">TL</h2>
-                <div class="links-container">
-                <a href="#" class="sign">E-mail sign-up</a>
-                <a class="bag" href="shopping-bag.html"><img class="bag-img" src="img/icons/ico_bag.png" alt="">Bag</a>
+    
+        <div class="container">
+                <header>
+                    <div class="header-first-line">
+                        <a href="start.html" class="logo">Template</a>
+                        <a href="start.html" class="logo-mobile">TL</a>
+                            <div class="user-options">
+                              <a href="#" class="sign-in">Email sign in</a>
+                                <div>
+                                    <a href="shopping-bag.html" class="bag">Bag (<span id="count">0</span>)</a>
+                                    <span class="menu-btn menu-btn-closed" id="menuBtn"></span>
+                                </div>
+                            </div>
+                    </div>
+                  
+                  <div class="mobile-group">
+                    <div class="nav-wrapper">
+                      <nav>
+                        <a href="#">Women</a>
+                        <a href="#">Men</a>
+                        <a href="#">Handbags</a>
+                        <a href="#">Accessories</a>
+                        <a href="#">Sale</a>
+                        <a href="#">New Arrival</a>
+                        <a href="#">Clearance</a>
+                        <a href="#">Store Locator</a>
+                      </nav>
+                    </div>
+                    <div class="search">
+                      <input type="text" placeholder="Style Name">
+                      <div class="magnifier"></div>
+                    </div>
+                  </div>
+                
+                </header>
+            </div>
+              
+                <main class="main-page-container">
+                    <div class="carousel">
+                        <div class="slideshow-container">
+                <div class="mySlides fade"><br>
+                    <img src="img/items_in_carousel/black_white_desktop.png" style="width: 100%" alt="">
                 </div>
-
-
+                <div class="mySlides fade"><br>
+                    <img src="img/items_in_carousel/multiply_promo_desktop.png" style="width: 100%" alt="">
+                </div>
+                <div class="mySlides fade"><br>
+                    <img src="img/items_in_carousel/shoes_desktop.png" style="width: 100%" alt="">
+                </div>
+                        </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(1)">&#10095</a>
+        
             </div>
-
-
-            <div class="bottom-header-container">
-                <nav id="dropdownmenu" class="hidden-menu">
-                    <ul class="nav-links-container">
-                        <li><a href="#">Women</a></li>
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">Handbags</a></li>
-                        <li><a href="#">Accesories</a></li>
-                        <li><a href="#">Sale</a></li>
-                        <li><a href="#">New Arrivals</a></li>
-                        <li><a href="#">Clearance</a></li>
-                        <li><a href="#">Store Locator</a></li>
-                        <li class="search-icon"><input class="search" type="search" placeholder="Style Name"></li>
-                    </ul>
-                 <!--    <input type="search" class="search-field" placeholder="Style Name"> -->
-                   <!--  <button class="search"><img src="img/icons/search.png" alt=""></button> -->
-                </nav>
+            <br>
+        
+            <div style="text-align: center";>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-        </header>
-        <main class="main-page-container">
-            <div class="carousel">
-                <div class="slideshow-container">
-        <div class="mySlides fade"><br>
-            <img src="img/items_in_carousel/black_white_desktop.png" style="width: 100%" alt="">
+        
+            <div class="banners">
+                <a href="item.html" class="first-banner">
+                    <picture>
+                        <source srcset="img/banners/nike_red.png" media="(max-width: 767px)">
+                        <source srcset="img/banners/nike-red_tablet.png" media="(max-width: 1023px)">
+                        <img src="img/banners/nike-red_desktop.png" alt="Nike Red">
+                    </picture>
+                </a>
+                   <a href="catalog.html" class="second-banner">
+                    <picture>
+                        <source srcset="img/banners/bag.png" media="(max-width: 1023px)">
+                        <img src="img/banners/capsandhats.png" alt="Caps">
+                    </picture>
+                </a>
+            </div>
+        
+        <h2 class="arrival">New arrivals</h2>
+        <div class="new-arrivals">
+            <figure class="item-1">
+                <div class="img-container">
+                <img src="img/arrivals/1.png" alt="">
+                  <div class="cover-box"><a href="item.html"><span>View Item</span></a></div>
+                </div>
+                <figcaption class="item-description">
+                    <h5 class="name">Straight Leg Jeans</h5>
+                    <p class="price">&pound;55</p>
+                </figcaption>
+            </figure>
+            <figure class="item-2">
+                <div class="img-container">
+                 <img src="img/arrivals/2.png" alt="">
+                  <div class="cover-box"><a href="item.html"><span>View Item</span></a></div>
+                </div>
+                <figcaption class="item-description">
+                    <h5 class="name">Boyfriend T-Shirt with Bohemian Print</h5>
+                    <p class="price">&pound;34.25</p>
+                </figcaption>
+            </figure>
+            <figure class="item-3-tablet">
+                <div class="img-container">
+                <img src="img/arrivals/3.png" alt="">
+                  <div class="cover-box"><a href="item.html"><span>View Item</span></a></div>
+                </div>
+                <figcaption class="item-description">
+                    <h5 class="name">Only Busted Knee Jean</h5>
+                    <p class="price">&pound;140.50</p>
+                </figcaption>
+            </figure>
+            <figure class="item-4-desktop">
+                <div class="img-container">
+                 <img src="img/arrivals/4.png" alt="">
+                  <div class="cover-box"><a href="item.html"><span>View Item</span></a></div>
+                </div>
+                <figcaption class="item-description">
+                    <h5 class="name">Only Skinny Jeans</h5>
+                    <p class="price">&pound;12.75</p>
+                </figcaption>
+            </figure>
         </div>
-        <div class="mySlides fade"><br>
-            <img src="img/items_in_carousel/multiply_promo_desktop.png" style="width: 100%" alt="">
-        </div>
-        <div class="mySlides fade"><br>
-            <img src="img/items_in_carousel/shoes_desktop.png" style="width: 100%" alt="">
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-        <a class="next" onclick="plusSlides(1)">&#10095</a>
-
-    </div>
-    <br>
-
-    <div style="text-align: center";>
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
-    <div class="banners">
-        <a href="item.html" class="first-banner">
-            <picture>
-                <source srcset="img/banners/nike_red.png" media="(max-width: 767px)">
-                <source srcset="img/banners/nike-red_tablet.png" media="(max-width: 1023px)">
-                <img src="img/banners/nike-red_desktop.png" alt="Nike Red">
-            </picture>
-        </a>
-           <a href="catalog.html" class="second-banner">
-            <picture>
-                <source srcset="img/banners/bag.png" media="(max-width: 1023px)">
-                <img src="img/banners/capsandhats.png" alt="Caps">
-            </picture>
-        </a>
-    </div>
-
-<h2 class="arrival">New arrivals</h2>
-<div class="new-arrivals">
-    <figure class="item-1">
-        <div class="img-container">
-        <img src="img/arrivals/1.png" alt="">
-          <div class="cover-box"><a href="item.html"><span>View Item</span></a></div>
-        </div>
-        <figcaption class="item-description">
-            <h5 class="name">Straight Leg Jeans</h5>
-            <p class="price">&pound;55</p>
-        </figcaption>
-    </figure>
-    <figure class="item-2">
-        <div class="img-container">
-         <img src="img/arrivals/2.png" alt="">
-          <div class="cover-box"><a href="item.html"><span>View Item</span></a></div>
-        </div>
-        <figcaption class="item-description">
-            <h5 class="name">Boyfriend T-Shirt with Bohemian Print</h5>
-            <p class="price">&pound;34.25</p>
-        </figcaption>
-    </figure>
-    <figure class="item-3-tablet">
-        <div class="img-container">
-        <img src="img/arrivals/3.png" alt="">
-          <div class="cover-box"><a href="item.html"><span>View Item</span></a></div>
-        </div>
-        <figcaption class="item-description">
-            <h5 class="name">Only Busted Knee Jean</h5>
-            <p class="price">&pound;140.50</p>
-        </figcaption>
-    </figure>
-    <figure class="item-4-desktop">
-        <div class="img-container">
-         <img src="img/arrivals/4.png" alt="">
-          <div class="cover-box"><a href="item.html"><span>View Item</span></a></div>
-        </div>
-        <figcaption class="item-description">
-            <h5 class="name">Only Skinny Jeans</h5>
-            <p class="price">&pound;12.75</p>
-        </figcaption>
-    </figure>
-</div>
-    <div class="button-container">
-        <button class="show-button" type="button">All arrivals</button>
-    </div>
-             </main>
-
-    <footer>
-        <div class="footer-container">
-        <div class="top-footer">
-            <div class="left-top">
-                <div class="quick-links">
-                       <h3 class="heading-footer">Quick Links</h3>
+            <div class="button-container">
+                <button class="show-button" type="button">All arrivals</button>
+            </div>
+                     </main>
+        <div class="container clearfix">
+            <footer class="top-footer clearfix">
+                <div class="left-top">
+                    <div class="quick-links">
+                            <h3 class="heading-footer">Quick Links</h3>
                             <ul class="links-list">
                                 <li><a href="#">Store locator</a></li>
                                 <li><a href="#">Gift cards</a></li>
@@ -145,56 +148,59 @@
                                 <li><a href="#">About us</a></li>
                                 <li><a href="#">Support</a></li>
                             </ul>
+                    </div>
+                    <div class="customer-care">
+                            <h3 class="heading-footer">Customer Care</h3>
+                            <ul class="links-list">
+                                <li><a href="#">Customer service</a></li>
+                                <li><a href="#">Track my order</a></li>
+                                <li><a href="#">Return policy</a></li>
+                                <li><a href="#">Shipping &amp; delivery</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                    </div>
                 </div>
-                <div class="customer-care">
-                     <h3 class="heading-footer">Customer Care</h3>
-                        <ul class="links-list">
-                            <li><a href="#">Customer service</a></li>
-                            <li><a href="#">Track my order</a></li>
-                            <li><a href="#">Return policy</a></li>
-                            <li><a href="#">Shipping &amp; delivery</a></li>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
+                <div class="right-top">
+                        <div class="questions">
+                                <h3 class="heading-footer">Questions</h3>
+                                    <p class="contacts"><img src="img/icons/ico_tw.png" alt="">Tweet us <span>@template</span></p>
+                                </div>
+                                <div class="order">
+                                    <h3 class="heading-footer">Order by phone</h3>
+                                    <p class="contacts">8-800-409-47-12</p>
+                                </div>
+                                <div class="delivery">
+                                    <p>We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</p>
+                                    <img src="img/icons/soc_f.png" alt="">
+                                    <img src="img/icons/soc_tw.png" alt="">
+                                </div>
                 </div>
-            </div>
-            <div class="right-top">
-                <div class="questions">
-                <h3 class="heading-footer">Questions</h3>
-                    <p class="contacts"><img src="img/icons/ico_tw.png" alt="">Tweet us <span>@template</span></p>
-                </div>
-                <div class="order">
-                    <h3 class="heading-footer">Order by phone</h3>
-                    <p class="contacts">8-800-409-47-12</p>
-                </div>
-                <div class="delivery">
-                    <p>We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</p>
-                    <img src="img/icons/soc_f.png" alt="">
-                    <img src="img/icons/soc_tw.png" alt="">
-                </div>
-            </div>
-            </div>
-        <div class="bottom-footer">
-            <div class="trademark">
-                <span>&copy; 2010-2015, The Template Group inc.</span>
-            </div>
-
-
-            <div class="share">
-                <span>Share</span>
-                    <button type="button" class="share-button" value="1 437">1 437</button>
-            </div>
-
-            <div class="nav-foot">
-                <ul class="footer-navigation">
-                    <li><a href="#">Legal notice</a></li>
-                    <li><a href="#">Privacy policy</a></li>
-                    <li><a href="#">Site map</a></li>
-                </ul>
-            </div>
+            </footer>
         </div>
-    </footer>
-    </div>
-    <script src="js/carousel.js"></script>
+        <div class="container-2 clearfix">
+          <footer class="bottom-footer">
+                               
+                    <div class="trademark">
+                        <span>&copy; 2010-2015, The Template Group inc.</span>
+                    </div>
+                    <div class="share">
+                        <span>Share</span>
+                            <button type="button" class="share-button" value="1 437">1 437</button>
+                    </div>
+                    <div class="nav-foot">
+                        <ul class="footer-navigation">
+                            <li><a href="#">Legal notice</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Site map</a></li>
+                        </ul>
+                    </div>
+               
+            </footer>
+        </div>
+            <script src="js/carousel.js"></script>
+            <script src="js/menu.js"></script>
+               
 </body>
+
 </html>
