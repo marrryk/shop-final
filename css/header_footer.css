@@ -11,7 +11,11 @@ html{
 	 margin: 0 auto;
 	 
   }
-  
+  header, footer {
+		max-width: 1180px;
+		margin: 0 auto;
+	}
+
   .clearfix:before,
   .clearfix:after {
 	content: "";
@@ -54,13 +58,6 @@ html{
 	background: url('../img/icons/ico_menu.png') bottom center no-repeat;
   }
   
-  .container{
-	max-width: 1180px;
-	margin: 0 auto;
-	width: 100%;
-	
-	
-  }
   
   header{
 	padding: 30px 0;
@@ -233,6 +230,10 @@ footer {
 	font-weight: bold;
 	font-size: 12px;
 	margin: 0 auto;
+	-webkit-display: flex;
+	-moz-display: flex;
+	-ms-display: flex;
+	-o-display: flex;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;

@@ -47,9 +47,8 @@
                 
                 </header>
             </div>
-              
-                <main class="main-page-container">
-                    <div class="carousel">
+                      <!-- slider part       -->
+                   <div class="carousel">
                         <div class="slideshow-container">
                 <div class="mySlides fade"><br>
                     <img src="img/items_in_carousel/black_white_desktop.png" style="width: 100%" alt="">
@@ -61,39 +60,46 @@
                     <img src="img/items_in_carousel/shoes_desktop.png" style="width: 100%" alt="">
                 </div>
                         </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-                <a class="next" onclick="plusSlides(1)">&#10095</a>
+                <a class="prev">&#10094</a>
+                <a class="next">&#10095</a>
         
             </div>
             <br>
         
             <div style="text-align: center";>
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
             </div>
+        <!-- end of slider part -->
+
         
-            <div class="banners">
-                <a href="item.html" class="first-banner">
-                    <picture>
-                        <source srcset="img/banners/nike_red.png" media="(max-width: 767px)">
-                        <source srcset="img/banners/nike-red_tablet.png" media="(max-width: 1023px)">
+        <div class="banners">
+            <div class="first-banner">
+                <a href="item.html">      
                         <img src="img/banners/nike-red_desktop.png" alt="Nike Red">
-                    </picture>
-                </a>
-                   <a href="catalog.html" class="second-banner">
-                    <picture>
-                        <source srcset="img/banners/bag.png" media="(max-width: 1023px)">
-                        <img src="img/banners/capsandhats.png" alt="Caps">
-                    </picture>
                 </a>
             </div>
-        
-        <h2 class="arrival">New arrivals</h2>
-        <div class="new-arrivals">
+            <div class="second-banner">
+                   <a href="catalog.html">
+                        <img src="img/banners/capsandhats.png" alt="Caps">
+                    </a>
+            </div>
+            <div class="third-banner">
+            <a href="catalog.html">
+                <img src="img/banners/bag.png" alt="">
+            </a>
+        </div>
+        </div>
+
+        <div class="container">
+            
+            <section class="new-arrivals">
+                <h2 class="arrival">New arrivals</h2>
+            <div class="arrivals-block">
             <figure class="item-1">
-                <div class="img-container">
-                <img src="img/arrivals/1.png" alt="">
+                    <div class="img-container">
+                        <img src="img/arrivals/1.png" alt="">
                   <div class="cover-box"><a href="item.html"><span>View Item</span></a></div>
                 </div>
                 <figcaption class="item-description">
@@ -131,11 +137,15 @@
                     <p class="price">&pound;12.75</p>
                 </figcaption>
             </figure>
+            </div>
+        </section>
         </div>
-            <div class="button-container">
+                <div class="button-container">
                 <button class="show-button" type="button">All arrivals</button>
             </div>
-                     </main>
+        
+        </div>
+
         <div class="container clearfix">
             <footer class="top-footer clearfix">
                 <div class="left-top">

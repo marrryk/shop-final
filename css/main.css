@@ -10,27 +10,23 @@
 } */
 /*body {
 
-background: url(../img/1_start_1300.png) no-repeat center top;
+background: url(1_start_1300.png) no-repeat center top;
 opacity: 0.3;
 
 }*/
 
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+
 a:hover {
     color: #f14a58;
-}
-.main-page-container {
-/* margin: 0 auto; */
-border-bottom: 1px solid #e5e5e5;
-overflow: hidden;
 }
 
 /*slider part*/
 
-/*.carousel {
-    max-height: 750px;
-    max-width: 1300px;
-    margin: 0 auto;
-}*/
 .slideshow-container{
     width: 100%;
     position: relative;
@@ -105,18 +101,30 @@ overflow: hidden;
 /*end of slider*/
 
 .banners {
-    margin: 0 auto;
+    max-width: 100%;
     width: 100%;
     display: flex;
-    justify-content: center;
-    -ms-align-items: center;
-    align-items: center;
     border-top: 1px solid #c9cbcd;
     margin-bottom: 150px;
 }
 
+.first-banner, .second-banner {
+    flex-basis: 50%;
 
+}
 
+.third-banner {
+    align-self: center;
+}
+
+.banners img {width: 100%;}
+
+/* end of banners */
+
+.new-arrivals {
+    max-width: 1180px;
+    margin: 0 auto;
+}
 .arrival {
     font-family: 'Open Sans';
     font-weight: bold;
@@ -125,29 +133,58 @@ overflow: hidden;
     text-align: center;
 }
 
-@media (max-width:767px) {
-    .second-banner {
+@media (min-width: 1024px) {
+    .third-banner {
         display: none;
     }
+}
+@media (max-width:767px) {
+    .second-banner, .third-banner {
+        display: none;
+    }
+    .first-banner {
+        flex-basis: 100%;
+        margin: 0 auto;
+    }
+    
     .item-3-tablet, .item-4-desktop {
         display: none;
     }
-}
-
-@media (max-width:1023px) {
-    .item-4-desktop {
-        display: none;
+    .arrivals-block {
+        justify-content: space-around;
+    }
+    .arrivals-block figure {
+        flex: 0 1 45%;
     }
 }
 
-.new-arrivals {
- margin: 100px auto 0;
-    max-width: 1180px;
-    width: 100%;
+@media (min-width: 768px) and (max-width:1023px) {
+    .item-4-desktop, .second-banner {
+        display: none;
+    }
+
+    .first-banner {
+        flex-basis: 70%;
+    }
+    .third-banner {
+        flex-basis: 30%;
+    }
+
+    .arrivals-block figure {
+        flex: 0 1 30%;
+    }
+}
+
+ 
+
+
+
+
+.arrivals-block {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
+
 
 .arrival {
     font-family: 'Open Sans';
@@ -180,6 +217,9 @@ overflow: hidden;
     cursor: pointer;
 }
 
+.img-container img{
+    width: 100%;
+}
 .cover-box {
     visibility: hidden;
     background: rgba(0,0,0,0.5);
@@ -225,3 +265,4 @@ overflow: hidden;
     padding: 25px 100px;
    
 }
+
