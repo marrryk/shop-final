@@ -14,11 +14,18 @@ background: url(1_start_1300.png) no-repeat center top;
 opacity: 0.3;
 
 }*/
-
+figure {
+-webkit-margin-before: 0;
+-webkit-margin-after: 0;
+-webkit-margin-start: 0;
+-webkit-margin-end: 0;
+display: inline-block;
+}
 .container {
     width: 100%;
     text-align: center;
     border-top: 1px solid #e5e5e5;
+  
 }
 
 
@@ -28,8 +35,15 @@ a:hover {
 
 /*slider part*/
 
-.slideshow-container{
+.carousel {
     width: 100%;
+    max-height: 850px;
+}
+
+.slideshow-container{
+    max-height: 769px;
+    overflow-y: hidden;
+    /* width: 100%; */
     position: relative;
     margin: 0 auto;
 }
@@ -38,13 +52,13 @@ a:hover {
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
     padding: 16px;
-    color: white;
+    background-color:#f14a58;
+    color: #fff;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3 px 0;    
+    border-radius: 0 3px 3px 0;    
 }
 
 .next{
@@ -57,7 +71,14 @@ a:hover {
 }
 
 .mySlides{
+    width: 100%;
     text-align: center;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+   
 }
 
 .text{
@@ -70,8 +91,8 @@ a:hover {
 
 .dot{
     cursor: pointer;
-    height: 13px;
-    width: 13px;
+    height: 8px;
+    width: 8px;
     margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
@@ -79,8 +100,12 @@ a:hover {
     transition: background-color 0.6s ease; 
 }
 
+.dot-container {
+    margin: 35px auto;
+}
+
 .active, .dot:hover{
-    background-color: #717171;
+    background-color: #f14a58;
 }
 
 .fade{
@@ -106,7 +131,7 @@ a:hover {
     width: 100%;
     display: flex;
     border-top: 1px solid #c9cbcd;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 .first-banner, .second-banner {
@@ -134,11 +159,71 @@ a:hover {
     text-align: center;
 }
 
+.img-container{
+    display: table;
+    background: #000;
+    position: relative;
+    z-index: 100;
+}
+
+.img-container img{
+    display: table-cell;
+}
+
+.img-container:hover img{
+    opacity: 0.5;
+}
+
+.img-container:hover .view-item{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.view-item{
+    position: absolute;
+    color: #f14a58;
+    top: calc(50% - 14px);
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    visibility: hidden;
+}
+
+
+figure:hover {
+	color: #f14a58;
+}
+figcaption {
+	padding: 20px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: bold;
+
+}
+
+figcaption span {
+	width: 90%;
+	display: block;
+	padding-top: 10px;
+	padding-right: 10px;
+	/* margin: 0 auto; */
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
 @media (min-width: 1024px) {
     .third-banner {
         display: none;
     }
-}
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+  }
+
+   
+
 @media (max-width:767px) {
     .second-banner, .third-banner {
         display: none;
@@ -154,9 +239,24 @@ a:hover {
     .arrivals-block {
         justify-content: space-around;
     }
-    .arrivals-block figure {
-        flex: 0 1 45%;
+    .arrivals-block .item {
+        flex: 0 1 50%;
     }
+    .prev, .next {
+        display: none;
+    }
+    .dot-container {
+        margin: 0;   
+    }
+
+    .container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+.container.bord {
+    padding-left: 0;
+    padding-right: 0;
+}
 }
 
 @media (min-width: 768px) and (max-width:1023px) {
@@ -171,8 +271,15 @@ a:hover {
         flex-basis: 30%;
     }
 
-    .arrivals-block figure {
+    .arrivals-block .item {
         flex: 0 1 30%;
+    }
+    .prev, .next {
+        display: none;
+    }
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
@@ -251,7 +358,7 @@ a:hover {
    display: flex;
    justify-content:center;
    align-items: center;
-   margin-top: 55px;
+   margin-top: 70px;
    margin-bottom: 110px;
 }
 

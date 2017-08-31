@@ -1,7 +1,7 @@
 var slideIndex = 0;
 var scrollInterval;
-var oPrevBtn = document.querySelector('.prev');
-var oNextBtn = document.querySelector('.next');
+// var oPrevBtn = document.querySelector('.prev');
+// var oNextBtn = document.querySelector('.next');
 
 
 function autoScroll() {
@@ -10,16 +10,16 @@ function autoScroll() {
     }, 5000);﻿
 }
 
-oNextBtn.onclick = function toNextSlide(){
-	clearInterval(scrollInterval);
-	slideIndex++;
-    showSlide(slideIndex);
-}
+function toNextSlide(){
+clearInterval(scrollInterval);
+ 	slideIndex++;
+     showSlide(slideIndex);
+ }
 
-oPrevBtn.onclick = function toPrevSlide(){
-    clearInterval(scrollInterval);
-	slideIndex--;
-    showSlide(slideIndex);
+function toPrevSlide(){
+ clearInterval(scrollInterval);
+slideIndex--;
+ showSlide(slideIndex);
 }
 
 function toExactSlide(index) {
