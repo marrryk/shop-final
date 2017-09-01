@@ -1,0 +1,254 @@
+.cart-part h2 {
+    font-family: 'Open Sans';
+    font-size: 26px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-bottom: 20px;
+   max-width: 1180px;
+   margin: 0 auto;
+   
+}
+
+.shop-heading {
+    width: 100%;
+    border-bottom: 1px solid #c5c5c5;
+}
+.cart-part {
+    text-align: left;
+    padding: 20px 0;
+   
+}
+
+
+.cart {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+.bag-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+    
+}
+ .bag-img {
+     width: 50%;
+     float: left;
+ }
+
+
+ .bag-item figure {
+     width: 100%;
+ }
+ .bag-item figcaption {
+     text-align: left;
+     width: 50%;
+     float: right;
+ }
+
+ .bag-item {
+     flex-basis: 50%;
+     padding-top: 30px;
+     padding-bottom: 45px;
+ }
+
+ .color {
+     margin-top: 20px;
+ }
+
+ .remove-item-btn {
+     margin-top: 20px;
+     outline: none;
+     border: none;
+     color: #f14a58;
+     background: transparent;
+     font-family: 'Open Sans';
+     font-weight: bold;
+     font-size: 13px;
+ }
+
+ .bag-item figcaption p {
+     font-weight: normal;
+     font-size: 12px;
+ }
+
+ .price-bag {
+     font-size: 17px;
+     font-weight: bold;
+ }
+
+ .color span, .quantity span, .size span {
+     display: inline;
+     font-size: inherit;
+ }
+
+ .notice {
+     width: 100%;
+     text-align: center;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     font-family: 'Open Sans';
+     font-size: 12px;
+     font-weight: bold;
+     background-color: #f7f7f7;
+     padding: 10px 0;
+ }
+
+ .bag-btn-container {
+     max-width: 1180px;
+     margin: 0 auto;
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: space-between;
+     padding-top: 30px;
+     padding-bottom: 60px;
+     padding-right: 40px;
+     padding-left: 40px;
+ }
+
+ .bag-btn-container button {
+    outline: none;
+     background-color: transparent;
+    
+ }
+
+ .bag-btn-container button:hover {
+     color: #f14a58;
+ }
+ .buy-bag-btn {
+     padding: 30px 110px;
+     border: 1px solid #e5e5e5;
+     font-family: 'Open Sans';
+     font-weight: bold;
+     font-size: 24px;
+ }
+
+ .clear-bag-btn {
+     padding: 30px 0;
+     outline: none;
+     border: none;
+     font-family: 'Roboto';
+     font-weight: bold;
+     font-size: 13px;
+ }
+
+ .total-bag {
+     padding-top: 10px;
+     line-height: 2;
+ }
+
+ .total-bag p:first-child {
+     font-size: 12px;
+     font-family: 'Roboto';
+     font-weight: normal;
+ }
+
+ .total-bag p:last-child {
+    font-size: 18px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+ 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cart-part h2 {
+    padding-left: 70px;
+      font-size: 20px;
+  }
+    .cart-part {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .cart {
+        padding-left: 40px;
+        padding-right: 40px;
+     }
+
+     .bag-item figcaption {
+        font-size: 14px;
+    }
+    .bag-item.price-bag {
+        font-size: 14px;
+    }
+    .bag-item figcaption p {
+       font-size: 12px;
+   }
+   .remove-item-btn {
+    font-size: 13px;
+}
+.notice p {
+    font-size: 11px;
+}
+     .bag-btn-container {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .buy-bag-btn {
+       font-size: 20px;
+       padding: 30px 85px;
+    }
+    .total-bag p:last-child {
+        font-size: 16px;
+    }
+}
+ @media (max-width: 767px) {
+     .cart-part h2 {
+        padding-left: 35px;
+         font-size: 20px;
+     }
+     .bag-items {
+         padding-top: 20px;
+     }
+     .bag-item {
+         padding-top: 0;
+     }
+     .bag-item figcaption {
+         font-size: 12px;
+     }
+     .bag-item.price-bag {
+         font-size: 14px;
+     }
+     .bag-item figcaption p {
+        font-size: 10px;
+    }
+    .remove-item-btn {
+        font-size: 11px;
+    }
+    .notice p {
+        flex-basis: 100%;
+        font-size: 10px;
+    }
+     .bag-item {
+         flex-basis: 100%;
+     }
+
+     .cart {
+        padding-left: 20px;
+        padding-right: 20px;
+     }
+     .cart-part {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .bag-btn-container {
+        padding: 20px 20px 36px;
+      
+    }
+    .clear-bag-btn {
+        font-size: 10px;
+    }
+    .buy-bag-btn {
+        font-size: 18px;
+        padding: 22px 30px;
+     }
+     .total-bag p:first-child {
+        font-size: 10px;
+    }
+     .total-bag p:last-child {
+         font-size: 14px;
+     }
+ }
