@@ -120,7 +120,9 @@
     .checked-btn {
         outline: 1px solid #e5e5e5;
     }
-
+    .active-thumbnail {
+    -webkit-filter: brightness(0.5);
+    }
     @media (min-width:768px) and (max-width: 1023px) {
       .item-block {
           flex-direction: column;
