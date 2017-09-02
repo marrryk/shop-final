@@ -190,9 +190,13 @@ a:hover {
 }
 
 
-figure:hover {
+figure:hover, figure:hover .view-item {
 	color: #f14a58;
 }
+figure:hover span, figure:hover p {
+	color: initial;
+}
+
 figcaption {
 	padding: 20px;
     text-align: center;

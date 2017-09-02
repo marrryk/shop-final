@@ -13,10 +13,10 @@
 <body>
     <div class="container">
         <header>
-            <div class="header-first-line">
-                <a href="start.html" class="logo">Template</a>
-                <a href="start.html" class="logo-mobile">TL</a>
-                    <div class="user-options">
+            <div class="header-top">
+                <a href="start.html" class="template">Template</a>
+                <a href="start.html" class="template-mobile">TL</a>
+                    <div class="header-top-right">
                       <a href="#" class="sign-in">Email sign in</a>
                         <div>
                             <a href="shopping-bag.html" class="bag">Bag (<span id="count">0</span>)</a>
@@ -25,7 +25,7 @@
                     </div>
             </div>
           
-          <div class="mobile-group">
+          <div class="mobile-visible-menu">
             <div class="nav-wrapper">
               <nav>
                 <a href="#">Women</a>
@@ -40,36 +40,105 @@
             </div>
             <div class="search">
               <input type="text" placeholder="Style Name">
-              <div class="magnifier"></div>
+              <div class="search-icon"></div>
             </div>
           </div>
         
         </header>
     </div>
-    <!-- end of header -->
-        <!-- part with filters -->
-    <div class="container">
-        <div class="filters">
-            
 
-<div class="menu-filter">
+
+    <!-- end of header -->
+
+        <!-- part with filters -->
+
+   <div class="container">
+               <div class="filters">
+<!-- filters for desktop -->
+  <div class="filter-desktop">
+        <section class="filter-category is-selected">
+            <h4 class="filter-name">Fashion</h4>
+            
+            <ul class="filter-list">
+                <li>Not selected</li>
+                <li>Nail the 90s</li>
+                <li>Casual style</li>
+                <li>New Look</li>
+                <li>Sport</li>
+                <li>Vintage</li>
+                <li>Classical style</li>
+            </ul>
+        </section>
+
+        <section class="filter-category">
+            <h4 class="filter-name">Product type</h4>
+          
+            <ul class="filter-list">
+                <li>Not selected</li>
+                <li>Coats &amp; Jackets</li>
+                <li>Dresses</li>
+                <li>Jersey Tops</li>
+            </ul>
+        </section>
+        <section class="filter-category">
+            <h4 class="filter-name">Color</h4>
+            <h4 class="filter-value"></h4>
+            <ul class="filter-list">
+                <li>Not selected</li>
+                <li>Black</li>
+                <li>Blue</li>
+                <li>Red</li>
+                <li>Green</li>
+                <li>Golden</li>
+            </ul>
+        </section>
+        <section class="filter-category">
+            <h4 class="filter-name">Brand</h4>
+            <h4 class="filter-value"></h4>
+            <ul class="filter-list">
+                <li>Not selected</li>
+                <li>Chi Chi London</li>
+                <li>Antipodium</li>
+                <li>Adidas</li>
+                <li>New Balance</li>
+                <li>River Island</li>
+            </ul>
+        </section>
+        <section class="filter-category">
+            <h4 class="filter-name">Size</h4>
+           
+            <ul class="filter-list">
+                <li>Not selected</li>
+                <li>UK 2</li>
+                <li>UK 18</li>
+                <li>UK 18L</li>
+                <li>UK 20</li>
+                <li>UK 20L</li>
+                <li>UK 20S</li>
+                <li>UK 22S</li>
+                <li>UK 22</li>
+            </ul>
+        </section>
+        <section class="filter-category">
+            <h4 class="filter-name">Price range</h4>
+            
+            <ul class="filter-list">
+                <li>Not selected</li>
+                <li>To &pound;99</li>
+                <li>&pound;100 &ndash; &pound;299</li>
+                <li>From &pound;300</li>
+            </ul>
+        </section>
+    </div>
+<!-- for tablet and mobile -->
+<div class="menu-filter-tablet">
     <div class="menu-filter-current-value">
       <!-- To be calculated with JavaScript -->
     </div>
     <div class="menu-filter-options">
       <div class="menu-filter-group">
         <h4>Fashion</h4>
-        <select>
-          <option selected="selected" disabled="true">Fashion</option>
-          <option>Not Selected</option>
-          <option>Vintage</option>
-          <option>Bohemian</option>
-          <option>Chic</option>
-          <option>Casual</option>
-          <option>Sport</option>
-          <option>Preppy</option>
-        </select>
-        <ul>
+          <ul>
           <li>Not Selected</li>
           <li>Vintage</li>
           <li class="active-filter">Bohemian</li>
@@ -81,13 +150,7 @@
       </div>
       <div class="menu-filter-group">
         <h4>Product Type</h4>
-        <select>
-          <option selected="selected" disabled="true">Product Type</option>
-          <option>Not Selected</option>
-          <option>Shirt and Blouses</option>
-          <option>Dresses</option>
-          <option>Skirts</option>
-        </select>
+      
         <ul>
           <li class="active-filter">Not Selected</li>
           <li>Shirt and Blouses</li>
@@ -97,15 +160,7 @@
       </div>
       <div class="menu-filter-group">
         <h4>Color</h4>
-        <select>
-          <option selected="selected" disabled="true">Color</option>
-          <option>Not Selected</option>
-          <option>Black</option>
-          <option>Blue</option>
-          <option>Red</option>
-          <option>Green</option>
-          <option>Golden</option>
-        </select>
+       
         <ul>
           <li class="active-filter">Not Selected</li>
           <li>Black</li>
@@ -117,15 +172,7 @@
       </div>
       <div class="menu-filter-group">
         <h4>Brand</h4>
-        <select>
-          <option selected="selected" disabled="true">Brand</option>
-          <option>Not Selected</option>
-          <option>Asos</option>
-          <option>Adidas</option>
-          <option>Fred Perry</option>
-          <option>Atmosphere</option>
-          <option>New Look</option>
-        </select>
+       
         <ul>
           <li>Not Selected</li>
           <li>Asos</li>
@@ -137,13 +184,7 @@
       </div>
       <div class="menu-filter-group">
         <h4>Size</h4>
-        <select>
-          <option selected="selected" disabled="true">Size</option>
-          <option>Not Selected</option>
-          <option>UK 52</option>
-          <option>UK 54</option>
-          <option>UK 56</option>
-        </select>
+       
         <ul>
           <li class="active-filter">Not Selected</li>
           <li>UK 52</li>
@@ -153,18 +194,12 @@
       </div>
       <div class="menu-filter-group">
         <h4>Price Range</h4>
-        <select>
-          <option selected="selected" disabled="true">Price range</option>
-          <option>Not Selected</option>
-          <option>to &pound;99.00</option>
-          <option>&pound;100.00-199.00</option>
-          <option>from &pound;200.00</option>
-        </select>
+       
         <ul>
           <li class="active-filter">Not Selected</li>
-          <li>UK 52</li>
-          <li>UK 54</li>
-          <li>UK 56</li>
+          <li>to &pound;99.00</li>
+          <li>&pound;100.00-199.00</li>
+          <li>from &pound;200.00</li>
         </ul>
       </div>
     </div>
@@ -172,7 +207,8 @@
   
   
         </div>
-    </div>
+        </div>
+    
 
         <div class="container">
            <div class="catalog">

@@ -33,24 +33,24 @@ html{
   }
    
  
-  a.logo, nav a:first-child{
+  a.template, nav a:first-child{
 	padding-left: 5px;
   }
   
   
  
-  .header-first-line .logo-mobile{
+  .header-top .template-mobile{
 	font-size: 2rem;
 	display: none;
 
   }
- .header-first-line, .mobile-group {
+ .header-top, .mobile-visible-menu {
 	 max-width: 1180px;
 	 margin: 0 auto;
 
 	
  } 
-  .user-options div{
+  .header-top-right div{
 	display: inline-block;
   }
   
@@ -84,26 +84,26 @@ html{
 	color: black;
   }
   
-  .logo{
+  .template{
 	font-size: 2rem;
 	display: inline-block;
   }
-  .header-first-line{
+  .header-top{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
   }
-  .header-first-line a{
+  .header-top a{
 	display: inline-block;
   }
-  .user-options a{
+  .header-top-right a{
 	padding-left: 30px;
   }
-  .user-options a:first-child{
+  .header-top-right a:first-child{
 	padding-right: 30px;
   }
   .bag{
-	background: url('../img/ico_bag.png') center left no-repeat;
+	background: url('../img/icons/ico_bag.png') center left no-repeat;
 	background-size: contain;
   }
   .nav-wrapper{
@@ -122,28 +122,28 @@ html{
   }
   
   .search{
-	display: inline-block;
-	width: 20%;
-	position: relative;
-  }
-  
-  .search input{
-	width: 55%;
-	margin-left: 45%;
-	border: none;
-	border-bottom: 2px solid #e5e5e5;
-  }
-  
-  .magnifier{
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	background: url('../img/ico-search.png') center center no-repeat;
-	background-size: contain;
-	position: absolute;
-	right: 0;
-	bottom: 0;
-  }
+		display: inline-block;
+		width: 20%;
+		position: relative;
+	}
+	
+	.search input{
+		width: 55%;
+		margin-left: 45%;
+		border: none;
+		border-bottom: 2px solid #e5e5e5;
+	}
+	
+	.search-icon{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background: url('../img/icons/search.png') center center no-repeat;
+		background-size: contain;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
   
 
 
@@ -267,11 +267,6 @@ footer {
 }
 
 
-/* .trademark, .share, .nav-foot {
-	width: 33.33%;
-	float: left;
-	
-} */
 .share span {
 	font-family: 'Open Sans';
 	font-weight: bold;
@@ -297,6 +292,25 @@ footer {
 }
 /*tablet*/
 @media screen and (min-width: 769px) and (max-width: 1023px) {
+	.search{
+    width: 5%;
+    position: relative;
+  }
+
+  .search input{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    visibility: hidden;
+    height: 30px;
+    width: 0px;
+  }
+
+  .search .search-input-field{
+    visibility: visible;
+    width: 150px;
+    
+  }
 	.delivery p {
 		display: none;
 	}
@@ -324,7 +338,16 @@ footer {
 
 /*mobile*/
 @media (max-width:768px) {
-	.mobile-group{
+	.search input{
+    margin: 0;
+  }
+
+  .search-icon{
+    position: relative;
+    left: -25px;
+    bottom: -5px;
+  }
+	.mobile-visible-menu{
 		position: absolute;
 		width: 100%;
 		background-color: white;
@@ -333,7 +356,7 @@ footer {
 		z-index: 100;
 		
 	  }
-	  .header-first-line{
+	  .header-top{
 		width: 85%;
 		margin: 0 auto;
 	  }
@@ -357,25 +380,15 @@ footer {
 		font-size: 1.4rem;
 	  }
 	
-	  .header-first-line a.sign-in{
+	  .header-top a.sign-in{
 		display: none;
 	  }
 	
-	  .search input{
-		margin: 0;
-	  }
-	
-	  .magnifier{
-		position: relative;
-		left: -25px;
-		bottom: -5px;
-	  }
-	
-	  a.logo{
+	  a.template{
 		display: none;
 	  }
 	
-	  .header-first-line .logo-mobile{
+	  .header-top .template-mobile{
 		display: inline-block;
 	  }
 	
@@ -396,6 +409,7 @@ footer {
 	  }
 	
 	  .active-menu{
+			text-align: left;
 		top: 73px;
 		}
 

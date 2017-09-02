@@ -149,9 +149,12 @@
             text-align: center;
             width: 100%;
         }
-
+.item-text-block {
+    padding-left: 0;
+}
         .size-item, .color-item {
             text-align: left;
+            width: 100%;
         }
 
      
