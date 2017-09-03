@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/header_footer.css">
     <link rel="stylesheet" href="css/catalog.css">
     <link rel="stylesheet" href="css/item.css">
-    <script src="https://use.fontawesome.com/75da3d6281.js"></script>
 </head>
 <body>
     
@@ -22,7 +21,7 @@
                         <div class="header-top-right">
                           <a href="#" class="sign-in">Email sign in</a>
                             <div>
-                                <a href="shopping-bag.html" class="bag">Bag (<span id="count">0</span>)</a>
+                                <a href="shopping-bag.html" class="bag">Bag <span class="money"></span> (<span id="count">0</span>)</a>
                                 <span class="menu-btn menu-btn-closed" id="menuBtn"></span>
                             </div>
                         </div>
@@ -60,7 +59,7 @@
 
 
             <div class="container">
-               <div class="item-block">
+               <div class="item-block ">
                    <div class="gallery-switcher">
                         <div class="main-img-switcher">
                                 <img src="img/item/th_item_0.jpg" id="mainImage" alt="">
@@ -73,19 +72,31 @@
                    </div>
                    <div class="item-text-block">
                        <h3 id="name-item">Dark classic fit suit</h3>
-                       <p class="item-text" id="item-text">Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs</p>
-                       <p class="price-item" id="price-item">&pound;180.60</p>
-                       <div class="size-item">
-                           <h5 class="item-prop-text">Size:</h5>
-                           <button class="item-btn size-btn checked-btn" type="button" value="UK 52">UK 52</button>
-                           <button class="item-btn size-btn" type="button" value="UK 54">UK 54</button>
-                           <button class="item-btn size-btn" type="button" value="UK 56">UK 56</button>
-                       </div>
+                            <p class="item-text" id="item-text">Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs</p>
+                            <p class="price-item" id="price-item">&pound;180.60</p>
+                            <!-- <div id="buttons-check"> -->
+                                <div class="size-item">
+                                    <h5 class="item-prop-text">Size:</h5>
+                                        <!-- <input class="item-btn size-btn checked-btn" id="size1" type="radio" value="UK 52"></input>
+                                        <label for="size1">UK 52</label>
+                                        <input class="item-btn size-btn" id="size2" type="radio" value="UK 54"></input>
+                                        <label for="size2">UK 54</label>
+                                        <input class="item-btn size-btn" id="size3" type="radio" value="UK 56"></input>
+                                        <label for="size3">UK 56</label> -->
+                                    <button class="item-btn size-btn highlighted-btn" type="button" id="size-btn1" value="UK 52">UK 52</button>
+                                    <button class="item-btn size-btn" type="button" id="size-btn2" value="UK 54">UK 52</button>
+                                    <button class="item-btn size-btn" type="button" id="size-btn3" value="UK 56">UK 52</button>
+                                </div>
                        <div class="color-item">
                             <h5 class="item-prop-text">Color:</h5>
-                            <button class="item-btn color-btn checked-btn" type="button" value="Black">Black</button>
-                            <button class="item-btn color-btn" type="button" value="Blue">Blue</button>
+                            <!-- <input class="item-btn color-btn checked-btn" id="color1" type="radio" value="Black"></input>
+                            <label for="color1">Black</label>
+                            <input class="item-btn color-btn" id="color2" type="radio" value="Blue"></input>
+                            <label for="color2">Blue</label> -->
+                            <button class="item-btn color-btn" type="button" id="color-btn1" value="UK 52">Black</button>
+                            <button class="item-btn color-btn" type="button" id="color-btn2" value="UK 54">Blue</button>
                        </div>
+                            <!-- </div> -->
                        <div class="add-bag-btn">
                             <button class="add-btn" type="button" value="Add to bag" onclick="addToCart()">Add to bag</button>
                        </div>
@@ -176,6 +187,7 @@
            
             <script src="js/menu.js"></script>
             <script src="js/items.js"></script> 
+            <script src="js/products.json"></script>
 </body>
 
 </html>

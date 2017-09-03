@@ -84,16 +84,6 @@
         margin-right: 20px;
     }
 
-    .item-btn {
-        background: transparent;
-        border: none;
-        outline: none;
-        padding: 10px 20px;
-        font-family: 'Open Sans';
-        font-weight: bold;
-        font-size: 14px;
-        /* text-align: left; */
-    }
 
     .size-item {
         text-align: left;
@@ -117,7 +107,18 @@
         border: 1px solid #e5e5e5;
     }
 
-    .checked-btn {
+    .item-btn {
+        border: none;
+        outline: none;
+         background: transparent;
+         padding: 10px 20px;
+         font-family: 'Open Sans';
+         font-weight: bold;
+         font-size: 14px;
+         color: black;
+    }
+    .highlighted-btn {
+        color: red;
         outline: 1px solid #e5e5e5;
     }
     .active-thumbnail {
@@ -139,6 +140,9 @@
       }
       .main-img-switcher {
         flex: 0 0 75%;
+      }
+      .size-item {
+          text-align: left;
       }
     }
 

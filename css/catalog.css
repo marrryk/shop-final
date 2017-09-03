@@ -301,8 +301,8 @@
 }
 
 .main-button {
-	border: 1px solid #f14a58;
-	color: #f14a58;
+	border: 1px solid #e5e5e5;
+	
 	background: transparent;
     outline: none;
     font-size: 24px;
@@ -311,9 +311,12 @@
     cursor: pointer;
     padding: 25px 100px;
 }
-
+.main-button:hover {
+	border: 1px solid #f14a58;
+	color: #f14a58;
+}
 .catalog-button {
-	margin: 95px auto 150px;
+	padding: 95px 0 150px;
 }
 
 
@@ -399,6 +402,13 @@ flex: 0 1 50%;
 		}
 		.bag-sale {
 			display: none;
+		}
+		.catalog-button {
+			padding: 88px 0 140px;
+		}
+		.main-button {
+			
+			padding: 30px 70px;
 		}
 
 }
