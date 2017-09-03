@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Catalog</title>
@@ -11,224 +12,155 @@
     <link rel="stylesheet" href="css/cart.css">
 
 </head>
+
 <body>
-        <div class="container">
-            <header>
-                <div class="header-top">
-                    <a href="start.html" class="template">Template</a>
-                    <a href="start.html" class="template-mobile">TL</a>
-                        <div class="header-top-right">
-                          <a href="#" class="sign-in">Email sign in</a>
-                            <div>
-                                <a href="shopping-bag.html" class="bag">Bag (<span id="count">0</span>)</a>
-                                <span class="menu-btn menu-btn-closed" id="menuBtn"></span>
-                            </div>
-                        </div>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <a href="start.html" class="template">Template</a>
+                <a href="start.html" class="template-mobile">TL</a>
+                <div class="header-top-right">
+                    <a href="#" class="sign-in">Email sign in</a>
+                    <div>
+                        <a href="shopping-bag.html" class="bag">Bag <span class="money"></span> (<span id="count">0</span>)</a>
+                        <span class="menu-btn menu-btn-closed" id="menuBtn"></span>
+                    </div>
                 </div>
-              
-              <div class="mobile-visible-menu">
+            </div>
+
+            <div class="mobile-visible-menu">
                 <div class="nav-wrapper">
-                  <nav>
-                    <a href="#">Women</a>
-                    <a href="#">Men</a>
-                    <a href="#">Handbags</a>
-                    <a href="#">Accessories</a>
-                    <a href="#">Sale</a>
-                    <a href="#">New Arrival</a>
-                    <a href="#">Clearance</a>
-                    <a href="#">Store Locator</a>
-                  </nav>
+                    <nav>
+                        <a href="#">Women</a>
+                        <a href="#">Men</a>
+                        <a href="#">Handbags</a>
+                        <a href="#">Accessories</a>
+                        <a href="#">Sale</a>
+                        <a href="#">New Arrival</a>
+                        <a href="#">Clearance</a>
+                        <a href="#">Store Locator</a>
+                    </nav>
                 </div>
                 <div class="search">
-                  <input type="text" placeholder="Style Name">
-                  <div class="search-icon"></div>
+                    <input type="text" placeholder="Style Name">
+                    <div class="search-icon"></div>
                 </div>
-              </div>
-            
-            </header>
             </div>
-<!-- end of header -->
-<!-- start of shopping bad div -->
+
+        </header>
+    </div>
+    <!-- end of header -->
+    <!-- start of shopping bad div -->
     <div class="container cart-part">
-        <div class="shop-heading"><h2>Shopping Bag</h2></div>
-            
-        <div class="cart">
-            
-        
-<div class="bag-items items-add-in-bag">
-    <!-- <div class="item bag-item">
-        <figure>
-            <div class="img-container bag-img"><a href="item.html"><img class="item-photo" src="img/catalog/7.jpg"></a>
-                <p class="view-item">View item</p>
-            </div>
-        <figcaption>Only Skinny Jeans
-            <span class="price-bag">&pound;390.25</span>
-            <p class="color">Color: <span>Phillipa Wash</span></p>
-            <p class="size">Size: <span>UK 17</span></p>
-            <p class="quantity">Quantity: <span>1</span></p>
-            <button type="button" class="remove-item-btn"> Remove item</button>
-        </figcaption>
-        </figure>
-    </div>
-    <div class="item bag-item">
-        <figure>
-            <div class="img-container bag-img"><a href="item.html"><img class="item-photo" src="img/catalog/3.jpg"></a>
-                <p class="view-item">View item</p>
-            </div>
-        <figcaption>Paul & Show Sister Jumper with Neon Trims
-            <span class="price-bag">&pound;400.75</span>
-            <p class="color">Color: <span>Blue</span></p>
-            <p class="size">Size: <span>UK 18</span></p>
-            <p class="quantity">Quantity: <span>1</span></p>
-            <button type="button" class="remove-item-btn"> Remove item</button>
-        </figcaption>
-        </figure>
-    </div>
-    <div class="item bag-item">
-        <figure>
-            <div class="img-container bag-img"><a href="item.html"><img class="item-photo" src="img/catalog/6.jpg"></a>
-                <p class="view-item">View item</p>
-            </div>
-        <figcaption>Boyfriend T-Shirt with  Bohemian Print
-            <span class="price-bag">&pound;360.00</span>
-            <p class="color">Color: <span>Black</span></p>
-            <p class="size">Size: <span>UK 18</span></p>
-            <p class="quantity">Quantity: <span>1</span></p>
-            <button type="button" class="remove-item-btn"> Remove item</button>
-        </figcaption>
-        </figure>
-    </div>
-    <div class="item bag-item">
-        <figure>
-            <div class="img-container bag-img"><a href="item.html"><img class="item-photo" src="img/catalog/2.jpg"></a>
-                <p class="view-item">View item</p>
-                
-            </div>
-        <figcaption>Turtle Neck Jumper in Rib
-            <span class="price-bag">&pound;489.50</span>
-            <p class="color">Color: <span>Green</span></p>
-            <p class="size">Size: <span>UK 18</span></p>
-            <p class="quantity">Quantity: <span>1</span></p>
-            <button type="button" class="remove-item-btn"> Remove item</button>
-        </figcaption>
-        
-        </figure>
-    </div> -->
-    <div class="item-in-bag bag-item">
-            <figure>
-                <div class="img-container bag-img"><a href="item.html"><img class="item-photo" id="mainImage" src="#"></a>
-                    <p class="view-item">View item</p>
-                </div>
-            <figcaption><h3 class="name-item"></h3>
-                <span class="price-item"></span>
-                <p class="color-item">Color: <span></span></p>
-                <p class="size-item">Size: <span></span></p>
-                <p class="quantity">Quantity: <span></span></p>
-                <button type="button" class="remove-item-btn"> Remove item</button>
-            </figcaption>
-            </figure>
+        <div class="shop-heading">
+            <h2>Shopping Bag</h2>
         </div>
-</div>
+
+        <div class="cart">
 
 
 
-</div>
-    <div class="bag-message hidden-bag">Your shopping bag is empty. Use Catalog to add new items</div>
-    <div class="bag-message hidden-bag">Thank you for your purchase</div>
-<aside class="notice">
-    <p>You've qualified for Free UK Next Day Delivery on your order.</p>
-    <p> Don't forget to enter the code <strong class="discount">nextday</strong> at checkout</p>
-</aside>
+        </div>
+        <div id="emptyBagMsg" class="bag-message hidden-bag">Your shopping bag is empty. Use Catalog to add new items</div>
+        <div id="orderCompleteMsg" class="bag-message hidden-bag">Thank you for your purchase</div>
+        <aside class="notice">
+            <p>You've qualified for Free UK Next Day Delivery on your order.</p>
+            <p> Don't forget to enter the code <strong class="discount">nextday</strong> at checkout</p>
+        </aside>
 
 
 
-    <div class="bag-btn-container">
-        <button type="button" class="clear-bag-btn" id="bag-btn-clear">Clear bag</button>
-        
-    <!-- <input type="button" id="clear-bag-btn" class="clear-bag-btn">Empty bag</input>
+        <div class="bag-btn-container">
+            <button type="button" class="clear-bag-btn" id="bag-btn-clear">Clear bag</button>
+
+            <!-- <input type="button" id="clear-bag-btn" class="clear-bag-btn">Empty bag</input>
     <input type="button" id="buy-bag-btn" class="buy-bag-btn">Buy now</input> -->
-    <button type="button" class="buy-bag-btn" id="buy-bag-btn">Buy now</button>   
-    <div class="total-bag">
-            <p class="total-cost-text">Total cost</p>
-        <p class="total-price">&pound;1640.50</p>
+            <button type="button" class="buy-bag-btn" id="buy-bag-btn">Buy now</button>
+            <div class="total-bag">
+                <p class="total-cost-text">Total cost</p>
+                <p class="total-price">&pound;1640.50</p>
+            </div>
+
+        </div>
     </div>
-    
-</div>
-    </div>
 
 
 
-<!-- end of shopping bad div -->
-<!-- start of footer -->
-            <div class="container bord clearfix">
-                    <footer>
-                        <div class="top-footer clearfix">
-                            
-                                <div class="left-top">
-                                    <div class="quick-links">
-                                        <h3 class="heading-footer">Quick Links</h3>
-                                            <ul class="links-list">
-                                            <li><a href="#">Store locator</a></li>
-                                            <li><a href="#">Gift cards</a></li>
-                                            <li><a href="#">Size guide</a></li>
-                                            <li><a href="#">About us</a></li>
-                                            <li><a href="#">Support</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="customer-care">
-                                        <h3 class="heading-footer">Customer Care</h3>
-                                            <ul class="links-list">
-                                                <li><a href="#">Customer service</a></li>
-                                                <li><a href="#">Track my order</a></li>
-                                                <li><a href="#">Return policy</a></li>
-                                                <li><a href="#">Shipping &amp; delivery</a></li>
-                                                <li><a href="#">Contact us</a></li>
-                                                <li><a href="#">Careers</a></li>
-                                            </ul>
-                                    </div>
-                                </div>
-                                <div class="right-top">
-                                    <div class="questions">
-                                        <h3 class="heading-footer">Questions</h3>
-                                            <p class="contacts"><img src="img/icons/ico_tw.png" alt="">Tweet us <span>@template</span></p>
-                                        </div>
-                                        <div class="order">
-                                            <h3 class="heading-footer">Order by phone</h3>
-                                            <p class="contacts">8-800-409-47-12</p>
-                                        </div>
-                                        <div class="delivery">
-                                            <p>We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</p>
-                                            <img src="img/icons/soc_f.png" alt="">
-                                            <img src="img/icons/soc_tw.png" alt="">
-                                        </div>
-                                </div>
-                            </div>
-                        </footer>
-                        </div>
-                
-                 <footer> <div class="bottom-footer">
-                                       
-                            <div class="trademark">
-                                <span>&copy; 2010-2015, The Template Group inc.</span>
-                            </div>
-                            <div class="share">
-                                <span>Share</span>
-                                    <button type="button" class="share-button" value="1 437">1 437</button>
-                            </div>
-                            <div class="nav-foot">
-                                <ul class="footer-navigation">
-                                    <li><a href="#">Legal notice</a></li>
-                                    <li><a href="#">Privacy policy</a></li>
-                                    <li><a href="#">Site map</a></li>
-                                </ul>
-                            </div>
-                       
+    <!-- end of shopping bad div -->
+    <!-- start of footer -->
+    <div class="container bord clearfix">
+        <footer>
+            <div class="top-footer clearfix">
+
+                <div class="left-top">
+                    <div class="quick-links">
+                        <h3 class="heading-footer">Quick Links</h3>
+                        <ul class="links-list">
+                            <li><a href="#">Store locator</a></li>
+                            <li><a href="#">Gift cards</a></li>
+                            <li><a href="#">Size guide</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
                     </div>
-                
-                </footer>
-            
-            <script src="js/menu.js"></script>
-            <script src="js/products.json"></script>
-               
+                    <div class="customer-care">
+                        <h3 class="heading-footer">Customer Care</h3>
+                        <ul class="links-list">
+                            <li><a href="#">Customer service</a></li>
+                            <li><a href="#">Track my order</a></li>
+                            <li><a href="#">Return policy</a></li>
+                            <li><a href="#">Shipping &amp; delivery</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-top">
+                    <div class="questions">
+                        <h3 class="heading-footer">Questions</h3>
+                        <p class="contacts"><img src="img/icons/ico_tw.png" alt="">Tweet us <span>@template</span></p>
+                    </div>
+                    <div class="order">
+                        <h3 class="heading-footer">Order by phone</h3>
+                        <p class="contacts">8-800-409-47-12</p>
+                    </div>
+                    <div class="delivery">
+                        <p>We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5
+                            days.</p>
+                        <img src="img/icons/soc_f.png" alt="">
+                        <img src="img/icons/soc_tw.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <footer>
+        <div class="bottom-footer">
+
+            <div class="trademark">
+                <span>&copy; 2010-2015, The Template Group inc.</span>
+            </div>
+            <div class="share">
+                <span>Share</span>
+                <button type="button" class="share-button" value="1 437">1 437</button>
+            </div>
+            <div class="nav-foot">
+                <ul class="footer-navigation">
+                    <li><a href="#">Legal notice</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Site map</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/bagcounter.js"></script>
+    <script src="js/cart.js"></script>
+
 </body>
+
 </html>

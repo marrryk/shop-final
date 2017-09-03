@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header_footer.css">
-    <link rel="stylesheet" href="css/catalog.css">
-    <link rel="stylesheet" href="css/item.css">
+
 </head>
 
 <body>
+
     <div class="container">
         <header>
             <div class="header-top">
@@ -49,83 +49,101 @@
 
         </header>
     </div>
+    <!-- slider part       -->
+    <div class="carousel">
+        <div class="slideshow-container">
+            <div class="mySlides fade"><br>
+                <a href="catalog.html"><img src="img/items_in_carousel/black_white_desktop.jpg" alt=""></a>
+            </div>
+            <div class="mySlides fade"><br>
+                <a href="item.html"><img src="img/items_in_carousel/multiply_promo_desktop.jpg" alt=""></a>
+            </div>
+            <div class="mySlides fade"><br>
+                <a href="catalog.html"><img src="img/items_in_carousel/shoes_desktop.jpg" alt=""></a>
+            </div>
+        </div>
+        <a class="prev" onclick="toPrevSlide()">&#10094</a>
+        <a class="next" onclick="toNextSlide()">&#10095</a>
 
-    <!-- here should be the part of item block -->
-    <div class="container">
-        <div class="back-catalog">
-            <p class="back">
-                <a href="catalog.html">
-                    < Back to catalog</a>
-            </p>
+
+        <div class="dot-container" style="text-align: center" ;>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <!-- end of slider part -->
+
+
+    <div class="banners">
+        <div class="first-banner">
+            <a href="item.html">      
+                        <img src="img/banners/nike_red.jpg" alt="Nike Red">
+                </a>
+        </div>
+        <div class="second-banner">
+            <a href="catalog.html">
+                        <img src="img/banners/capsandhats.jpg" alt="Caps">
+                    </a>
+        </div>
+        <div class="third-banner">
+            <a href="catalog.html">
+                <img src="img/banners/bag.jpg" alt="">
+            </a>
         </div>
     </div>
 
-
     <div class="container">
-        <div class="item-block ">
-            <div class="gallery-switcher">
-                <div class="main-img-switcher">
-                    <img src="img/item/th_item_0.jpg" id="mainImage" alt="">
+
+        <section class="new-arrivals">
+            <h2 class="arrival">New arrivals</h2>
+            <div class="arrivals-block">
+                <div class="item mobile item-1">
+                    <figure>
+                        <div class="img-container"><a href="item.html"><img class="item-photo" src="img/arrivals/1.jpg"><p class="view-item">View item</p></a>
+                        </div>
+                        <figcaption>Straight Leg Jeans<span>&pound;55.00</span>
+                        </figcaption>
+                    </figure>
                 </div>
-                <div id="thumbnailsWrapper" onclick="changeImage(event)" class="thumb">
-                    <!-- Thumbnails being added with JavaScript based on current product -->
+                <div class="item mobile item-2">
+                    <figure>
+                        <div class="img-container"><a href="item.html"><img class="item-photo" src="img/arrivals/2.jpg"><p class="view-item">View item</p></a>
+                        </div>
+                        <figcaption>Boyfriend T-Shirt with <br>Bohemian Print<span>&pound;34.25</span>
+                        </figcaption>
+                    </figure>
                 </div>
+                <div class="item mobile item-3-tablet">
+                    <figure>
+                        <div class="img-container"><a href="item.html"><img class="item-photo" src="img/arrivals/3.jpg"><p class="view-item">View item</p></a>
+                        </div>
+                        <figcaption>Only Busted Knee Jean<span>&pound;140.50</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="item mobile item-4-desktop">
+                    <figure>
+                        <div class="img-container"><a href="item.html"><img class="item-photo" src="img/arrivals/4.jpg"><p class="view-item">View item</p></a>
+                        </div>
+                        <figcaption>Only Skinny Jeans<span>&pound;12.75</span>
+                        </figcaption>
+                    </figure>
+                </div>
+
             </div>
-            <div class="item-text-block">
-                <h3 id="name-item"></h3>
-                <p class="item-text" id="item-text">Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs</p>
-                <p class="price-item" id="price-item">&pound;</p>
-                <!-- <div id="buttons-check"> -->
-                <div class="size-item">
-                    <h5 class="item-prop-text">Size:</h5>
-                    <ul>
-                        <li>
-                            <input name="size" class="sizeInput" checked id="size1" type="radio" value="UK 52" />
-                            <label for="size1" class="item-btn size-btn">UK 52</label>
-                        </li>
-                        <li>
-                            <input name="size" class="sizeInput" id="size2" type="radio" value="UK 54" />
-                            <label for="size2" class="item-btn size-btn">UK 54</label>
-                        </li>
-                        <li>
-                            <input name="size" class="sizeInput" id="size3" type="radio" value="UK 56" />
-                            <label for="size3" class="item-btn size-btn">UK 56</label>
-                        </li>
-                    </ul>
-                </div>
-                <div class="color-item">
-                    <h5 class="item-prop-text">Color:</h5>
-                    <ul>
-                        <li>
-                            <input name="color" class="colorInput" checked id="color1" type="radio" value="Black" />
-                            <label class="item-btn color-btn" for="color1">Black</label>
-                        </li>
-                        <li>
-                            <input name="color" class="colorInput" id="color2" type="radio" value="Blue" />
-                            <label class="item-btn color-btn" for="color2">Blue</label>
-                        </li>
-                    </ul>
-                </div>
-                <!-- </div> -->
-                <div class="add-bag-btn">
-                    <button class="add-btn add-to-bag" type="button" value="Add to bag">Add to bag</button>
-                </div>
-            </div>
-        </div>
+        </section>
+    </div>
+    <div class="button-container">
+        <button class="show-button" type="button">All arrivals</button>
     </div>
 
-    <!-- end of item block -->
-    <div class="container ban">
-        <div class="banners">
-            <div class="banner-img adi"><img src="img/banners/adi.jpg" alt="adidas blue"></div>
-            <div class="banner-img jeans"><img src="img/banners/repair_patches.jpg" alt="repair patches"></div>
-            <div class="banner-img bag-sale"><img src="img/banners/bag.jpg" alt="sale"></div>
-        </div>
     </div>
 
     <div class="container bord clearfix">
         <footer>
             <div class="top-footer clearfix">
+
                 <div class="left-top">
                     <div class="quick-links">
                         <h3 class="heading-footer">Quick Links</h3>
@@ -160,7 +178,8 @@
                     </div>
                     <div class="delivery">
                         <p>We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5
-                            days.</p>
+                            days.
+                        </p>
                         <img src="img/icons/soc_f.png" alt="">
                         <img src="img/icons/soc_tw.png" alt="">
                     </div>
@@ -171,6 +190,7 @@
 
     <footer>
         <div class="bottom-footer">
+
             <div class="trademark">
                 <span>&copy; 2010-2015, The Template Group inc.</span>
             </div>
@@ -185,14 +205,16 @@
                     <li><a href="#">Site map</a></li>
                 </ul>
             </div>
+
         </div>
 
     </footer>
 
-    <script src="js/products.js"></script>
+    <script src="js/carousel.js"></script>
+    <!-- <script src="js/products.js"></script> -->
     <script src="js/menu.js"></script>
     <script src="js/bagcounter.js"></script>
-    <script src="js/item.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

@@ -1,25 +1,15 @@
-function loadJSON(callback) {
-  // Get data from json file
-  var xobj = new XMLHttpRequest();
-  xobj.overrideMimeType("application/json");
-  xobj.open('GET', './js/products.json', true);
-  xobj.onreadystatechange = function () {
-    if (xobj.readyState == 4 && xobj.status == "200") {
-      // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-      callback(xobj.responseText);
-    }
-  };
-  xobj.send(null);
+function init() {
+  var product = getProduct(); 
+  setDataItemObject(product);
+
+  bagCounter();
 }
 
-
-function init() {
-  loadJSON(function(response) {
-    console.log(response);
-    // Parse JSON string into object
-    var actual_JSON = JSON.parse(response);
-    setDataItemObject(actual_JSON[0]);
-  });
+function getProduct() {
+  var productId = window.location.hash.split("=")[1];
+  return window.products.filter(function(product) {
+    return product.id == productId;
+  })[0];
 }
 
 function setDataItemObject(item) {
@@ -60,33 +50,52 @@ function addToBag() {
     if (localStorage.basket) {
       bagData = JSON.parse(localStorage.basket);
     }
-    if(JSON.parse(itemBlock.getAttribute('data-product'))) {
-      bagData.push(JSON.parse(itemBlock.getAttribute('data-product')));
+
+    var product = JSON.parse(itemBlock.getAttribute('data-product'));
+    var basketProduct = bagData.filter(function(bagProduct) {
+      return bagProduct.id == product.id
+        && bagProduct.size == product.size
+        && bagProduct.color == product.color;
+    })[0];
+
+    if (product && basketProduct) {
+      // product already exists in basket
+      basketProduct.quantity++;
       localStorage.basket = JSON.stringify(bagData);
-      bagCounter();
     }
+    else {
+      // new product
+      bagData.push(product);
+      localStorage.basket = JSON.stringify(bagData);
+    }
+
+    bagCounter();    
   });
 }
 
-function bagCounter() {
-  var itemBag = document.querySelector('.bag');
-  var moneyItem = itemBag.querySelector('#count');
-  var bagItems = JSON.parse(localStorage.basket);
-  var sumPrice = 0;
-  for (var i = 0; i < bagItems.length; i++) {
-    sumPrice = +bagItems[i].price + sumPrice;
+function changeImage(event) {
+  event = event || window.event;
+  var  targetElement = event.target || event.srcElement;
+  if (targetElement.tagName == "IMG") {
+    document.getElementById("mainImage").src = targetElement.getAttribute("src");
   }
-  moneyItem.innerText = sumPrice.toFixed(2);
 }
 
-// function changeImage(event) {
-//   event = event || window.event;
-//   var  targetElement = event.target || event.srcElement;
-//   if (targetElement.tagName == "IMG") {
-//     document.getElementById("mainImage").src = targetElement.getAttribute("src");
-//   }
-// }
+function loadProductInfo() {
+  var product = getProduct();
+  var mainImg = document.querySelector('#mainImage');
+  var thumbnailsWrapper = document.querySelector('#thumbnailsWrapper');
+  var productName = document.querySelector('#name-item');
+  var price = document.querySelector('#price-item');
 
+  mainImg.src = 'img/items/' + product.source;
+  for (var i=0; i<product.thumbnails.length; i++) {
+    thumbnailsWrapper.innerHTML += '<div><img src="img/items/' + product.thumbnails[i] + '" alt="" class="imgStyle"></div>'
+  }
+
+  productName.innerHTML = product.name;
+  price.innerHTML += product.price;
+}
 
 
 // var countItems = 0;
@@ -102,7 +111,7 @@ function bagCounter() {
 
 
 init();
+loadProductInfo();
 chooseColor();
 chooseSize();
 addToBag();
-bagCounter();
