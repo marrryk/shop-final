@@ -119,6 +119,7 @@
 
  .bag-btn-container button:hover {
      color: #f14a58;
+     border: 1px solid #f14a58;
  }
  .buy-bag-btn {
      padding: 30px 110px;
@@ -152,6 +153,16 @@
     font-size: 18px;
     font-family: 'Open Sans';
     font-weight: bold;
+}
+
+.bag-message {
+    /* display: none; */
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 10px 0;
+
 }
  
 @media (min-width: 768px) and (max-width: 1023px) {

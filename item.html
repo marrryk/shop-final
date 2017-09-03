@@ -12,22 +12,21 @@
     <link rel="stylesheet" href="css/item.css">
 </head>
 <body>
-    
-        <div class="container">
-            <header>
-                <div class="header-top">
-                    <a href="start.html" class="template">Template</a>
-                    <a href="start.html" class="template-mobile">TL</a>
-                        <div class="header-top-right">
-                          <a href="#" class="sign-in">Email sign in</a>
-                            <div>
-                                <a href="shopping-bag.html" class="bag">Bag <span class="money"></span> (<span id="count">0</span>)</a>
-                                <span class="menu-btn menu-btn-closed" id="menuBtn"></span>
-                            </div>
-                        </div>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <a href="start.html" class="template">Template</a>
+                <a href="start.html" class="template-mobile">TL</a>
+                <div class="header-top-right">
+                  <a href="#" class="sign-in">Email sign in</a>
+                    <div>
+                        <a href="shopping-bag.html" class="bag">Bag <span class="money"></span> (<span id="count">0</span>)</a>
+                        <span class="menu-btn menu-btn-closed" id="menuBtn"></span>
+                    </div>
                 </div>
-              
-              <div class="mobile-visible-menu">
+            </div>
+
+            <div class="mobile-visible-menu">
                 <div class="nav-wrapper">
                   <nav>
                     <a href="#">Women</a>
@@ -44,150 +43,150 @@
                   <input type="text" placeholder="Style Name">
                   <div class="search-icon"></div>
                 </div>
-              </div>
-            
-            </header>
             </div>
-                  
-            
-<!-- here should be the part of item block -->
-            <div class="container">
-                <div class="back-catalog">
-                    <p class="back"><a href="catalog.html"> < Back to catalog</a></p>
+
+        </header>
+    </div>
+
+    <!-- here should be the part of item block -->
+    <div class="container">
+        <div class="back-catalog">
+            <p class="back"><a href="catalog.html"> < Back to catalog</a></p>
+        </div>
+    </div>
+
+
+    <div class="container">
+       <div class="item-block ">
+           <div class="gallery-switcher">
+                <div class="main-img-switcher">
+                        <img src="img/item/th_item_0.jpg" id="mainImage" alt="">
                 </div>
-            </div>
-
-
-            <div class="container">
-               <div class="item-block ">
-                   <div class="gallery-switcher">
-                        <div class="main-img-switcher">
-                                <img src="img/item/th_item_0.jpg" id="mainImage" alt="">
-                        </div>
-                        <div id="myDiv" onclick="changeImage(event)"class="thumb">
-                            <div><img src="img/item/th_item_0.jpg" alt="" class="imgStyle"></div>
-                            <div><img src="img/item/th_item_1.jpg" alt="" class="imgStyle"></div>
-                            <div><img src="img/item/th_item_2.jpg" alt="" class="imgStyle"></div>
-                        </div>
-                   </div>
-                   <div class="item-text-block">
-                       <h3 id="name-item">Dark classic fit suit</h3>
-                            <p class="item-text" id="item-text">Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs</p>
-                            <p class="price-item" id="price-item">&pound;180.60</p>
-                            <!-- <div id="buttons-check"> -->
-                                <div class="size-item">
-                                    <h5 class="item-prop-text">Size:</h5>
-                                        <!-- <input class="item-btn size-btn checked-btn" id="size1" type="radio" value="UK 52"></input>
-                                        <label for="size1">UK 52</label>
-                                        <input class="item-btn size-btn" id="size2" type="radio" value="UK 54"></input>
-                                        <label for="size2">UK 54</label>
-                                        <input class="item-btn size-btn" id="size3" type="radio" value="UK 56"></input>
-                                        <label for="size3">UK 56</label> -->
-                                    <button class="item-btn size-btn highlighted-btn" type="button" id="size-btn1" value="UK 52">UK 52</button>
-                                    <button class="item-btn size-btn" type="button" id="size-btn2" value="UK 54">UK 52</button>
-                                    <button class="item-btn size-btn" type="button" id="size-btn3" value="UK 56">UK 52</button>
-                                </div>
-                       <div class="color-item">
-                            <h5 class="item-prop-text">Color:</h5>
-                            <!-- <input class="item-btn color-btn checked-btn" id="color1" type="radio" value="Black"></input>
-                            <label for="color1">Black</label>
-                            <input class="item-btn color-btn" id="color2" type="radio" value="Blue"></input>
-                            <label for="color2">Blue</label> -->
-                            <button class="item-btn color-btn" type="button" id="color-btn1" value="UK 52">Black</button>
-                            <button class="item-btn color-btn" type="button" id="color-btn2" value="UK 54">Blue</button>
-                       </div>
-                            <!-- </div> -->
-                       <div class="add-bag-btn">
-                            <button class="add-btn" type="button" value="Add to bag" onclick="addToCart()">Add to bag</button>
-                       </div>
-                   </div>
-                   </div> 
-            </div>
-     
-
-
-
-
-<!-- end of item block -->
-            <div class="container ban">
-                <div class="banners">
-                    <div class="banner-img adi"><img src="img/banners/adi.jpg" alt="adidas blue"></div>
-                    <div class="banner-img jeans"><img src="img/banners/repair_patches.jpg" alt="repair patches"></div>
-                    <div class="banner-img bag-sale"><img src="img/banners/bag.jpg" alt="sale"></div>
+                <div id="myDiv" onclick="changeImage(event)"class="thumb">
+                    <div><img src="img/item/th_item_0.jpg" alt="" class="imgStyle"></div>
+                    <div><img src="img/item/th_item_1.jpg" alt="" class="imgStyle"></div>
+                    <div><img src="img/item/th_item_2.jpg" alt="" class="imgStyle"></div>
                 </div>
-            </div>
-
-            <div class="container bord clearfix">
-                    <footer>
-                        <div class="top-footer clearfix">
-                            
-                                <div class="left-top">
-                                    <div class="quick-links">
-                                        <h3 class="heading-footer">Quick Links</h3>
-                                            <ul class="links-list">
-                                            <li><a href="#">Store locator</a></li>
-                                            <li><a href="#">Gift cards</a></li>
-                                            <li><a href="#">Size guide</a></li>
-                                            <li><a href="#">About us</a></li>
-                                            <li><a href="#">Support</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="customer-care">
-                                        <h3 class="heading-footer">Customer Care</h3>
-                                            <ul class="links-list">
-                                                <li><a href="#">Customer service</a></li>
-                                                <li><a href="#">Track my order</a></li>
-                                                <li><a href="#">Return policy</a></li>
-                                                <li><a href="#">Shipping &amp; delivery</a></li>
-                                                <li><a href="#">Contact us</a></li>
-                                                <li><a href="#">Careers</a></li>
-                                            </ul>
-                                    </div>
-                                </div>
-                                <div class="right-top">
-                                    <div class="questions">
-                                        <h3 class="heading-footer">Questions</h3>
-                                            <p class="contacts"><img src="img/icons/ico_tw.png" alt="">Tweet us <span>@template</span></p>
-                                        </div>
-                                        <div class="order">
-                                            <h3 class="heading-footer">Order by phone</h3>
-                                            <p class="contacts">8-800-409-47-12</p>
-                                        </div>
-                                        <div class="delivery">
-                                            <p>We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</p>
-                                            <img src="img/icons/soc_f.png" alt="">
-                                            <img src="img/icons/soc_tw.png" alt="">
-                                        </div>
-                                </div>
-                            </div>
-                        </footer>
+           </div>
+           <div class="item-text-block">
+               <h3 id="name-item">Dark classic fit suit</h3>
+                    <p class="item-text" id="item-text">Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs</p>
+                    <p class="price-item" id="price-item">&pound;180.60</p>
+                    <!-- <div id="buttons-check"> -->
+                        <div class="size-item">
+                            <h5 class="item-prop-text">Size:</h5>
+                            <ul>
+                                <li>
+                                    <input name="size" class="sizeInput" checked id="size1" type="radio" value="UK 52" />
+                                    <label for="size1" class="item-btn size-btn">UK 52</label>
+                                </li>
+                                <li>
+                                    <input name="size" class="sizeInput" id="size2" type="radio" value="UK 54" />
+                                    <label for="size2" class="item-btn size-btn">UK 54</label>
+                                </li>
+                                <li>
+                                    <input name="size" class="sizeInput" id="size3" type="radio" value="UK 56" />
+                                    <label for="size3" class="item-btn size-btn">UK 56</label>
+                                </li>
+                            </ul>
                         </div>
-                
-                 <footer> <div class="bottom-footer">
-                                       
-                            <div class="trademark">
-                                <span>&copy; 2010-2015, The Template Group inc.</span>
-                            </div>
-                            <div class="share">
-                                <span>Share</span>
-                                    <button type="button" class="share-button" value="1 437">1 437</button>
-                            </div>
-                            <div class="nav-foot">
-                                <ul class="footer-navigation">
-                                    <li><a href="#">Legal notice</a></li>
-                                    <li><a href="#">Privacy policy</a></li>
-                                    <li><a href="#">Site map</a></li>
-                                </ul>
-                            </div>
-                       
+               <div class="color-item">
+                   <h5 class="item-prop-text">Color:</h5>
+                   <ul>
+                       <li>
+                           <input name="color" class="colorInput" checked id="color1" type="radio" value="Black" />
+                           <label class="item-btn color-btn" for="color1">Black</label>
+                       </li>
+                       <li>
+                           <input name="color" class="colorInput" id="color2" type="radio" value="Blue" />
+                           <label class="item-btn color-btn" for="color2">Blue</label>
+                       </li>
+                   </ul>
+               </div>
+                    <!-- </div> -->
+               <div class="add-bag-btn">
+                    <button class="add-btn add-to-bag" type="button" value="Add to bag">Add to bag</button>
+               </div>
+           </div>
+       </div>
+    </div>
+
+    <!-- end of item block -->
+    <div class="container ban">
+        <div class="banners">
+            <div class="banner-img adi"><img src="img/banners/adi.jpg" alt="adidas blue"></div>
+            <div class="banner-img jeans"><img src="img/banners/repair_patches.jpg" alt="repair patches"></div>
+            <div class="banner-img bag-sale"><img src="img/banners/bag.jpg" alt="sale"></div>
+        </div>
+    </div>
+
+    <div class="container bord clearfix">
+        <footer>
+            <div class="top-footer clearfix">
+                <div class="left-top">
+                    <div class="quick-links">
+                        <h3 class="heading-footer">Quick Links</h3>
+                            <ul class="links-list">
+                            <li><a href="#">Store locator</a></li>
+                            <li><a href="#">Gift cards</a></li>
+                            <li><a href="#">Size guide</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
                     </div>
-                
-                </footer>
-            
-           
-            <script src="js/menu.js"></script>
-            <script src="js/items.js"></script> 
-            <script src="js/products.json"></script>
-</body>
+                    <div class="customer-care">
+                        <h3 class="heading-footer">Customer Care</h3>
+                        <ul class="links-list">
+                            <li><a href="#">Customer service</a></li>
+                            <li><a href="#">Track my order</a></li>
+                            <li><a href="#">Return policy</a></li>
+                            <li><a href="#">Shipping &amp; delivery</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-top">
+                    <div class="questions">
+                        <h3 class="heading-footer">Questions</h3>
+                            <p class="contacts"><img src="img/icons/ico_tw.png" alt="">Tweet us <span>@template</span></p>
+                    </div>
+                    <div class="order">
+                        <h3 class="heading-footer">Order by phone</h3>
+                        <p class="contacts">8-800-409-47-12</p>
+                    </div>
+                    <div class="delivery">
+                        <p>We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</p>
+                        <img src="img/icons/soc_f.png" alt="">
+                        <img src="img/icons/soc_tw.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
+     <footer>
+         <div class="bottom-footer">
+            <div class="trademark">
+                <span>&copy; 2010-2015, The Template Group inc.</span>
+            </div>
+            <div class="share">
+                <span>Share</span>
+                <button type="button" class="share-button" value="1 437">1 437</button>
+            </div>
+            <div class="nav-foot">
+                <ul class="footer-navigation">
+                    <li><a href="#">Legal notice</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Site map</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/products.json"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/item.js"></script>
+</body>
 </html>
